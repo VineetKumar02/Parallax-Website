@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+</head>
+
+<body>
+    <!-- This is the header/ Nav Bar -->
+    <header id="header">
+        <a href="#" class="logo">Parallax</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#sec">About</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- This is the Top Section (Above Water) -->
+    <section>
+        <img src="images/land/sky.png" id="sky" class="wallpaper">
+        <img src="images/land/sun.png" id="sun">
+        <img src="images/land/mountains.png" id="mountains" class="wallpaper">
+        <img src="images/land/cloud.png" id="cloud">
+        <h2 id="text"><span>It's Time for a new</span><br>Adventure</h2>
+        <img src="images/land/forest.png" id="forest">
+        <img src="images/land/bird1.png" id="bird1">
+        <img src="images/land/bird2.png" id="bird2">
+        <a href="#sec" id="explore">Explore</a>
+        <img src="images/land/rocks.png" id="rocks">
+        <img src="images/land/splash.png" id="splash">
+        <img src="images/land/water.png" id="water">
+    </section>
+
+    <!-- This is the Middle Section (Below Water) which has content -->
+    <div class="sec" id="sec">
+
+        <!-- Importing sea background images (on top.. so that it hides behind glass content) -->
+        <img src="images/sea/sea1.png" id="sea1" class="undersea">
+        <img src="images/sea/sea2.png" id="sea2" class="undersea">
+        <img src="images/sea/sea3.png" id="sea3" class="undersea">
+        <img src="images/sea/sea4.png" id="sea4" class="undersea">
+        <img src="images/sea/sea5.png" id="sea5" class="undersea">
+        <img src="images/sea/sea6.png" id="sea6" class="undersea">
+        <img src="images/sea/sea7.png" id="sea7" class="undersea">
+        <img src="images/sea/sea8.png" id="sea8" class="undersea">
+
+        <!-- Text Content here -->
+        <h2>Parallax Scrolling Effects</h2>
+        <div id="name">By Vineet Kumar</div><br>
+        <div class="glass">
+            <h3>What is parallax scrolling?</h3>
+            <p>
+                Parallax scrolling is a web design technique in which the website background moves at a slower pace than
+                the foreground. This results in a 3D effect as visitors scroll down the site, adding a sense of depth
+                and creating a more immersive browsing experience. Parallax is based on optical illusion.
+                Since the human eye perceives objects that are close to us as arger than things farther away,
+                we perceive distant objects as if they were moving more slowly. The illusion has been long adopted into
+                parallax across different mediums, fostering a realistic effect. Its first use was in traditional
+                animation,
+                dating back to as early as Disney's Snow White and the Seven Dwarfs, and in video games such as Super
+                Mario.
+                With advancements in CSS and HTML, parallax effects later evolved into the world of web design as we
+                know it today.
+                <br><br>
+                One of the first implementations of parallax scrolling in the browser was created and shared in a blog
+                post by web developer Glutnix in 2007, this included example code and a demo using JavaScript and CSS 2
+                that supported Internet Explorer 6 and other browsers of that era. However, it wasn't until 2011 and the
+                introduction of HTML5 and CSS 3 coding that the technique became popular with Web designers. Advocates
+                argue it is a simple way to embrace the fluidity of the Web. Proponents use parallax backgrounds as a
+                tool to better engage users and improve the overall experience that a website provides. However, a
+                Purdue
+                University study, published in 2013, revealed the following findings: "... although parallax scrolling
+                enhanced certain aspects of the user experience, it did not necessarily improve the overall user
+                experience".
+            </p>
+        </div>
+        <br>
+        <div class="glass">
+            <h3>Why should I use parallax graphics?</h3>
+            <ul>
+                <p>There are two main reasons why designers should try parallax graphics:</p>
+                <li>
+                    <h4>It helps tell a story</h4>
+                    <p>
+                        Parallax graphics are ideal for storytelling. Good design is all about communication—and when we
+                        design websites, we want to communicate with our visitors and tell a compelling story about our
+                        product, service, or brand. Parallax scrolling allows us to immerse our website visitors in
+                        unique online experiences. It's even possible to create a one-page website where visitors can
+                        read an entire story about your product or brand without navigating to multiple pages.
+                    </p>
+                </li>
+                <li>
+                    <h4>It helps to improve user engagement</h4>
+                    <p>
+                        Parallax graphics can be used to improve user engagement. Reducing your website’s bounce rate is
+                        one of the goals to be conscientious of in web design. Bounce rate measures the percentage of
+                        site visitors who either hit the “back” button or close the tab after checking just one page of
+                        your
+                        website. High bounce rates hurt your search ranking, so any actions you can take to bring that
+                        rate down are worthwhile. A well-crafted parallax page gives the user the type of dynamic
+                        experience that tends to keep them on the page longer.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div class="glass">
+            <h3>If you want to add a parallax scrolling effect to your website, you should consider the following tips.
+            </h3>
+            <ul>
+                <li aria-level="1">
+                    <h4>Use it selectively</h4>
+                    <p>
+                        Parallax scrolling is much more powerful when you use it on one particular element as opposed
+                        to all pages and all the time. Use it in headers and titles, or maybe on your homepage only.
+                        You want parallax scrolling to strengthen your website's design, not distract users.
+                    </p>
+                </li>
+                <li aria-level="1">
+                    <h4>Image compression</h4>
+                    <p>
+                        Parallax scrolling uses a variety of media files and CSS shapes to create a sense of depth.
+                        You don't want to compromise your web performance and user experience ith large image files that
+                        load too slowly.
+                    </p>
+                </li>
+                <li aria-level="1">
+                    <h4>Play with color</h4>
+                    <p>
+                        Parallax scrolling isn't just about the images in the foreground and background,
+                        but about color, too. You might use more desaturated tones in the background and
+                        more lively colors in the foreground to create an even greater sense of depth.
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Importing fish and seabed images -->
+        <img src="images/sea/fish1.png" id="fish1" class="fishes">
+        <img src="images/sea/fish2.png" id="fish2" class="fishes">
+        <img src="images/sea/fish3.png" id="fish3" class="fishes">
+        <img src="images/sea/fish4.png" id="fish4" class="fishes">
+        <img src="images/sea/oceanbed.png" id="seabed" class="fishes">
+
+        <!-- Container for the bubble animation -->
+        <div class="bubbles">
+            <img src="images/sea/bubble.png" alt="">
+            <img src="images/sea/bubble.png" alt="">
+            <img src="images/sea/bubble.png" alt="">
+            <img src="images/sea/bubble.png" alt="">
+            <img src="images/sea/bubble.png" alt="">
+            <img src="images/sea/bubble.png" alt="">
+            <img src="images/sea/bubble.png" alt="">
+        </div>
+    </div>
+
+    <!-- Code for the footer -->
+    <div class="footer" id="footer">
+        <span>Do Follow Me on:</span>
+        <div class="wrapper">
+            <div class="button">
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <span>Facebook</span>
+            </div>
+            <div class="button">
+                <div class="icon">
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <span>Twitter</span>
+            </div>
+            <div class="button">
+                <div class="icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <span>Instagram</span>
+            </div>
+            <div class="button">
+                <div class="icon">
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <span>LinkedIn</span>
+            </div>
+            <div class="button">
+                <div class="icon">
+                    <i class="fab fa-github"></i>
+                </div>
+                <span>GitHub</span>
+            </div>
+        </div>
+        <span>A website created by Vineet Kumar ❤️<br>IT 3rd Yr at SSN College of Engineering</span>
+    </div>
+
+    <!-- The button to scroll back to top -->
+    <a id="top" href="#"> <i class="fas fa-arrow-up"></i> </a>
+</body>
+
+<!-- Always include javascript at end of file...just above html tag -->
+<script src="action.js"></script>
+
+</html>

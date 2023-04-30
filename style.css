@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    /* To prevent Horizontal scroll */
+}
+
+html {
+    scroll-behavior: smooth;
+    /* To scrolling animation */
+}
+
+#header {
+    position: absolute;
+    /* To Overlap with background */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5em 5em;
+    display: flex;
+    /* To get elements in row */
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99999;
+    /* Header shld be above everything */
+}
+
+#header .logo {
+    color: #002431;
+    font-weight: 800;
+    font-size: 2.5em;
+    text-decoration: none;
+    /* To prevent Underline */
+}
+
+#header ul {
+    display: flex;
+    /* To get elements in row */
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header ul li {
+    list-style: none;
+    /* To Remove dot */
+    margin: 0px 10px;
+}
+
+#header ul li a {
+    text-decoration: none;
+    /* To prevent Underline */
+    padding: 6px 15px;
+    /* font-size: 1.1em; */
+    color: #003549;
+    border-radius: 20px;
+}
+
+#header ul li a:hover,
+#header ul li a.active {
+    background: #003549;
+    color: white;
+}
+
+/* The Section Body... Set it to max size of screen */
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* To blend section color with water color */
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #085a7a, transparent);
+    z-index: 10;
+}
+
+/* Make all images absolute and cover whole screen */
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+/* Properites for th text on top section  */
+section #text span {
+    font-size: 0.2em;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: white;
+}
+
+section #text {
+    position: absolute;
+    color: #004660;
+    font-size: 10vw;
+    text-align: center;
+    line-height: 0.55em;
+    font-family: 'Rancho', cursive;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+
+/* The explore Button */
+#explore {
+    text-decoration: none;
+    /* To prevent Underline */
+    padding: 8px 25px;
+    background: white;
+    color: #003549;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    transform: translateY(100px);
+    /* To move it 100px below from center */
+}
+
+#explore:hover {
+    background: #003549;
+    color: white;
+}
+
+/* Propeties of Top button */
+#top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #4faa2e;
+    bottom: 18%;
+    right: 5%;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+
+
+/* Glass Effect */
+.glass {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-Left: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    padding: 1em;
+    margin-bottom: 2%;
+}
+
+/* Properties for middle section (below water) */
+.sec {
+    position: relative;
+    padding: 10%;
+    background: #085a7a;
+    padding-bottom: 15%;
+    z-index: 50;
+    overflow: hidden;
+}
+
+/* Properties for text content */
+.sec h2 {
+    font-size: 3.5em;
+}
+
+.sec #name {
+    font-size: 1.5em;
+    font-family: 'Rancho', cursive;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.sec h3 {
+    font-size: 1.8em;
+    margin: 2%;
+}
+
+.sec h4 {
+    font-size: 1.2em;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.sec p {
+    margin: 10px 20px 40px;
+}
+
+.sec ul {
+    margin: 0 5%;
+}
+
+.sec ul li {
+    margin: 2%;
+}
+
+/* Make all fishes image as absolute.. To overlap with background */
+.fishes {
+    position: absolute;
+    opacity: 0.8;
+}
+
+/* Properties for each fish and sea bed*/
+#fish1 {
+    top: 0%;
+}
+
+#fish2 {
+    top: 32%;
+}
+
+#fish3 {
+    top: 60%;
+}
+
+#fish4 {
+    top: 87%;
+}
+
+#seabed {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    opacity: 1;
+}
+
+.undersea {
+    position: absolute;
+    opacity: 1;
+}
+
+#sea1 {
+    top: 10%;
+    left: 1%;
+    width: 20%;
+}
+
+#sea2 {
+    top: 16%;
+    right: 1%;
+    width: 10%;
+}
+
+#sea3 {
+    top: 40%;
+    left: 0;
+    width: 12%;
+}
+
+#sea4 {
+    top: 50%;
+    right: 0;
+    width: 12%;
+}
+
+#sea5 {
+    top: 70%;
+    left: 1%;
+    width: 10%;
+}
+
+#sea6 {
+    top: 75%;
+    right: 2%;
+    width: 6%;
+}
+
+#sea7 {
+    top: 90%;
+    right: 70%;
+    width: 10%;
+}
+
+#sea8 {
+    bottom: 0;
+    left: 55%;
+    width: 10%;
+    z-index: 100;
+}
+
+
+/* Properties for mobile */
+@media screen and (max-width: 650px) {
+
+    #header {
+        padding: 1em 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #header ul {
+        padding: 0.5em;
+    }
+
+    section #text {
+        font-size: 20vw;
+        /* Adjust text size acc to screen size */
+    }
+
+    /* Using contian to make img fit mobile screen size */
+    /* height and width chnages size and position */
+    section img#cloud {
+        object-fit: contain;
+        height: 600px;
+        width: 600px;
+    }
+
+    section img#bird1 {
+        object-fit: contain;
+        height: 600px;
+        width: 400px;
+    }
+
+    section img#bird2 {
+        object-fit: contain;
+        height: 750px;
+        width: 500px;
+    }
+
+    /* Adjust text content acc to screen size */
+    .sec ul li {
+        margin: 20px;
+    }
+
+    .sec ul {
+        margin: 0px 0px;
+    }
+
+    .sec h3 {
+        font-size: 1.5em;
+        margin: 20px 0px;
+    }
+
+    .sec p {
+        margin: 1% 4%;
+    }
+
+    #seabed {
+        object-fit: contain;
+        left: 0;
+        width: 750px;
+    }
+
+    .glass {
+        backdrop-filter: blur(1px);
+    }
+
+    #sea1 {
+        top: 7%;
+        width: 40%;
+    }
+
+    #sea2 {
+        top: 25%;
+        width: 20%;
+    }
+
+    #sea3 {
+        top: 42%;
+        width: 25%;
+    }
+
+    #sea4 {
+        top: 52%;
+        width: 25%;
+    }
+
+    #sea5 {
+        top: 72%;
+        left: 1%;
+        width: 20%;
+    }
+
+    #sea6 {
+        top: 80%;
+        right: 2%;
+        width: 15%;
+    }
+
+    #sea7 {
+        top: 96%;
+        left: 1%;
+        width: 20%;
+    }
+
+    #sea8 {
+        left: 50%;
+        width: 15%;
+    }
+}

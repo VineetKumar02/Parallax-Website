@@ -1,0 +1,205 @@
+/* Code for The Bubble Animation */
+
+.bubbles {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	position: absolute;
+	bottom: 0;
+
+	/* Default values for duration and y value (For Desktop) */
+	--transform-duration: 6s;
+	--transform-y: -300vh;
+}
+
+.bubbles img {
+	opacity: 0;
+	animation-name: bubble;
+	animation-timing-function: linear;
+	animation-duration: var(--transform-duration);
+	animation-iteration-count: infinite;
+}
+
+@keyframes bubble {
+	0% {
+		transform: translateY(0);
+		opacity: 0;
+	}
+
+	10% {
+		opacity: 1;
+	}
+
+	100% {
+		transform: translateY(var(--transform-y));
+		opacity: 1;
+	}
+}
+
+/* Delay for each bubble separately (Desktop View)*/
+.bubbles img:nth-child(1) {
+	animation-delay: 2s;
+}
+
+.bubbles img:nth-child(2) {
+	animation-delay: 5s;
+}
+
+.bubbles img:nth-child(3) {
+	animation-delay: 3s;
+}
+
+.bubbles img:nth-child(4) {
+	animation-delay: 6s;
+}
+
+.bubbles img:nth-child(5) {
+	animation-delay: 1s;
+}
+
+.bubbles img:nth-child(6) {
+	animation-delay: 4s;
+}
+
+.bubbles img:nth-child(7) {
+	animation-delay: 6s;
+}
+
+/* Delay for each bubble separately (Mobile View) */
+@media screen and (max-width: 650px) {
+	.bubbles img:nth-child(1) {
+		animation-delay: 0s;
+	}
+
+	.bubbles img:nth-child(2) {
+		animation-delay: 10s;
+	}
+
+	.bubbles img:nth-child(3) {
+		animation-delay: 6s;
+	}
+
+	.bubbles img:nth-child(4) {
+		animation-delay: 12s;
+	}
+
+	.bubbles img:nth-child(5) {
+		animation-delay: 2s;
+	}
+
+	.bubbles img:nth-child(6) {
+		animation-delay: 8s;
+	}
+
+	.bubbles img:nth-child(7) {
+		animation-delay: 13s;
+	}
+
+}
+
+
+
+/* Code for the Animation in Footer .... Social Media Icons */
+
+/* Properties for footer */
+.footer {
+    width: 100%;
+    background: #e6bb95;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.footer span {
+    color: black;
+    padding: 10px 0px;
+}
+
+.wrapper .button {
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	margin: 0 5px;
+	overflow: hidden;
+	background: #fff;
+	border-radius: 50px;
+	cursor: pointer;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover {
+	width: 11rem;
+	text-align: left;
+}
+
+/* To rotate icon by 360 degree */
+.wrapper .button:hover i {
+	transform: rotate(360deg);
+}
+
+.wrapper .button .icon {
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	border-radius: 50px;
+	margin-left: 0;
+}
+
+.wrapper .button .icon i {
+	font-size: 25px;
+	line-height: 50px;
+	color: #fff;
+	transition-duration: 0.8s;
+	transition-property: transform;
+}
+
+.wrapper .button span {
+	font-size: 20px;
+	font-weight: 500;
+	margin-left: 10px;
+	transition: all 0.3s ease-out;
+}
+
+/* Set Color for each Icon */
+.wrapper .button:nth-child(1) .icon {
+	background: #4267B2;
+}
+
+.wrapper .button:nth-child(2) .icon {
+	background: #1DA1F2;
+}
+
+.wrapper .button:nth-child(3) .icon {
+	background: radial-gradient(circle at 30% 140%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.wrapper .button:nth-child(4) .icon {
+	background: #0072b1;
+}
+
+.wrapper .button:nth-child(5) .icon {
+	background: #171515;
+}
+
+
+/* Set Color for each text */
+.wrapper .button:nth-child(1) span {
+	color: #4267B2;
+}
+
+.wrapper .button:nth-child(2) span {
+	color: #1DA1F2;
+}
+
+.wrapper .button:nth-child(3) span {
+	color: #E1306C;
+}
+
+.wrapper .button:nth-child(4) span {
+	color: #0072b1;
+}
+
+.wrapper .button:nth-child(5) span {
+	color: #171515;
+}
