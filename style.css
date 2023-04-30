@@ -11,56 +11,46 @@
 
 html,
 body {
-    overflow-x: hidden;
-    /* To prevent Horizontal scroll */
+    overflow-x: hidden;    /* To prevent Horizontal scroll */
 }
 
 html {
-    scroll-behavior: smooth;
-    /* To scrolling animation */
+    scroll-behavior: smooth;    /* To scrolling animation */
 }
 
 #header {
-    position: absolute;
-    /* To Overlap with background */
+    position: absolute;     /* To Overlap with background */
     top: 0;
     left: 0;
     width: 100%;
     padding: 1.5em 5em;
-    display: flex;
-    /* To get elements in row */
+    display: flex;         /* To get elements in row */
     justify-content: space-between;
     align-items: center;
-    z-index: 99999;
-    /* Header shld be above everything */
+    z-index: 99999;       /* Header shld be above everything */
 }
 
 #header .logo {
     color: #002431;
     font-weight: 800;
     font-size: 2.5em;
-    text-decoration: none;
-    /* To prevent Underline */
+    text-decoration: none;    /* To prevent Underline */
 }
 
 #header ul {
-    display: flex;
-    /* To get elements in row */
+    display: flex;   /* To get elements in row */
     justify-content: space-around;
     align-items: center;
 }
 
 #header ul li {
-    list-style: none;
-    /* To Remove dot */
+    list-style: none;   /* To Remove dot */
     margin: 0px 10px;
 }
 
 #header ul li a {
-    text-decoration: none;
-    /* To prevent Underline */
+    text-decoration: none;   /* To prevent Underline */
     padding: 6px 15px;
-    /* font-size: 1.1em; */
     color: #003549;
     border-radius: 20px;
 }
@@ -126,8 +116,7 @@ section #text {
 
 /* The explore Button */
 #explore {
-    text-decoration: none;
-    /* To prevent Underline */
+    text-decoration: none;     /* To prevent Underline */
     padding: 8px 25px;
     background: white;
     color: #003549;
@@ -135,8 +124,7 @@ section #text {
     font-weight: bold;
     letter-spacing: 2px;
     border-radius: 40px;
-    transform: translateY(100px);
-    /* To move it 100px below from center */
+    transform: translateY(100px);   /* To move it 100px below from center */
 }
 
 #explore:hover {
@@ -322,8 +310,7 @@ section #text {
     }
 
     section #text {
-        font-size: 20vw;
-        /* Adjust text size acc to screen size */
+        font-size: 20vw;    /* Adjust text size acc to screen size */
     }
 
     /* Using contian to make img fit mobile screen size */
